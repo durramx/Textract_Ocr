@@ -1,0 +1,14 @@
+francesco.bersani.workspace@gmail.com 48ea41f6-7f25-437c-8d1e-2fb009edad1b
+francesco.bersani.workspace+copyleaks1@gmail.com 29515415-d415-488f-b88e-7deb88f79488
+
+
+curl -XPOST -H "Content-type: application/json" -d '{
+  "email": "francesco.bersani.workspace@gmail.com",
+  "key": "48ea41f6-7f25-437c-8d1e-2fb009edad1b"
+}' 'https://id.copyleaks.com/v3/account/login/api'
+{"access_token":"74B4516DF9ADD952ED4D7D3DD74361AEADA54578A31E0AFB877E8438534897C9",".issued":"2022-09-15T17:04:34.6692822Z",".expires":"2022-09-17T17:04:34.6692822Z"}%
+
+
+
+
+curl -XPUT -H "Content-type: application/json" -H "Authorization: Bearer 74B4516DF9ADD952ED4D7D3DD74361AEADA54578A31E0AFB877E8438534897C9" -d '{ "filename": "capstone_v1.pdf.document.json","base64": "eyJEb2N1bWVudCI6ICJUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nXG5Hb29kIG1vcm5pbmcgZXZlcnlvbmVcbiJ9"}' 'https://id.copyleaks.com/v3/scans/submit/file/capstone_v1.pdf'
